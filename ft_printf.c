@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 18:42:06 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2025/01/17 17:37:32 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2025/01/17 18:08:41 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ static int	handle_p(unsigned long long p)
 
 	counter = 0;
 	if (p == 0)
-		return (ft_putstr_fd("(nil)",1));
+		return (ft_putstr_fd("(nil)", 1));
 	else
 	{
-	ft_putstr_fd("0x", 1);
-	counter += 2;
-	counter += ft_print_hex(p, 0);	
-	}	
+		ft_putstr_fd("0x", 1);
+		counter += 2;
+		counter += ft_print_hex(p, 0);
+	}
 	return (counter);
 }
 
@@ -78,5 +78,3 @@ int	ft_printf(char const *str, ...)
 	va_end(args);
 	return (counter);
 }
-
-

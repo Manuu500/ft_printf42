@@ -6,7 +6,7 @@
 /*   By: mruiz-ur <mruiz-ur@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 17:08:57 by mruiz-ur          #+#    #+#             */
-/*   Updated: 2025/01/17 17:43:51 by mruiz-ur         ###   ########.fr       */
+/*   Updated: 2025/01/17 18:08:59 by mruiz-ur         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_putstr_fd(char *s, int fd)
 	else
 	{
 		str_long = ft_strlen(s);
-		write(fd, s, str_long);	
+		write(fd, s, str_long);
 	}
 	return (str_long);
 }
