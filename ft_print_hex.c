@@ -68,5 +68,6 @@ int	ft_print_hex(unsigned long long number, int upper)
 	hex = malloc(sizeof(char) * n + 1);
 	hex[n] = 0;
 	counter = ft_hex_body(i, base, hex, number);
+	free(base);
 	return (counter);
 }
